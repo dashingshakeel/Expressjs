@@ -18,7 +18,7 @@ app.get('/', function(req,res,next){
   console.log(names);
   next();
 },function(req,res){
-  res.render('index.jade',{names: names})
+  res.render('index.ejs',{names: names})
 });
 
 app.post('/',function(req,res){
